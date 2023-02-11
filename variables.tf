@@ -1,5 +1,5 @@
 variable "location" {
-  default     = "West Europe"
+  default     = "eastus"
   description = "The Azure Region in which all resources in this example should be created."
 }
 
