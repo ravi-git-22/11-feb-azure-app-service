@@ -1,5 +1,5 @@
 resource "azurerm_resource_group" "terraform_app_service_rg" {
-  name     = "terraform-app-service-rg2"
+  name     = "terraform-app-service-rg3"
   location = var.location
 }
 
