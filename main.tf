@@ -8,7 +8,7 @@ resource "azurerm_service_plan" "terraform_app_service_plan" {
   location            = var.location
   resource_group_name = azurerm_resource_group.terraform_app_service_rg.name
   os_type             = "Windows"
-  sku_name            = "S1"
+  sku_name            = "B"
 }
 
 
