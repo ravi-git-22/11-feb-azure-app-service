@@ -41,4 +41,4 @@ jobs:
         with:
           inlineScript: |
             cd app
-            az webapp up app-service-bahubali --html
+            az webapp up --name app-service-bahubali --html
