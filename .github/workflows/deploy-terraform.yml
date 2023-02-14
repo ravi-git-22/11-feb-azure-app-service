@@ -4,7 +4,7 @@ on: [push]
 jobs:
   deploy-infrastructure:
     runs-on: ubuntu-latest
-    using: 'node16'
+    
 
     env:
       ARM_CLIENT_ID: ${{ secrets.ARM_CLIENT_ID }}
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Setup Terraform
-        uses: hashicorp/setup-terraform@v1
+        uses: hashicorp/setup-terraform@v2
 
       - name: Terraform Init
         run: terraform init
